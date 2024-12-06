@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="keywords" content="layanan rumah tangga, cleaning service, laundry, cooking">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "HomeEase",
+      "description": "Solusi layanan rumah tangga terpercaya",
+      "url": "https://homeease.example.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Your City",
+        "addressCountry": "ID"
+      }
+    }
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HomeEase - Solusi layanan rumah tangga terpercaya.">
+  <title>HomeEase - Pemesanan Layanan Rumah Tangga</title>
+  <link rel="icon" href="images/H.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+     <!-- B243051A - Basri -->
+  <header>
+    <nav>
+      <a href="#services">Layanan</a>
+      <a href="#about">Tentang Kami</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+
+    <div class="header-container">
+        <img src="images/H.png" alt="Logo HomeEase" class="logo">
+        <div class="header-text">
+          <h1>HomeEase</h1>
+          <p>Solusi layanan rumah tangga terpercaya</p>
+        </div>
+      </div>
+  </header>
+  <main>
+
+    <section>
+        <h2>Tentang Layanan Kami</h2>
+        <div class="services">
+          <div class="service-item">
+            <img src="images/1.png" alt="Cleaning Service">
+            <h3>Cleaning Service</h3>
+            <p>Layanan kebersihan profesional untuk rumah Anda, memastikan lingkungan yang sehat dan nyaman.</p>
+          </div>
+          <div class="service-item">
+            <img src="images/2.png" alt="Laundry Service">
+            <h3>Laundry</h3>
+            <p>Laundry cepat dan rapi dengan hasil bersih seperti baru, cocok untuk gaya hidup Anda yang sibuk.</p>
+          </div>
+          <div class="service-item">
+            <img src="images/3.png" alt="Cooking Service">
+            <h3>Cooking Service</h3>
+            <p>Masakan lezat dan sehat sesuai selera Anda, langsung dari dapur kami ke meja makan Anda.</p>
+          </div>
+        </div>
+      </section>
+  
+      <section>
+        <h2>Pentingnya Layanan Rumah Tangga</h2>
+        <p>Menjaga rumah tetap bersih dan nyaman sangat penting untuk kesehatan dan produktivitas keluarga. 
+        Namun, kesibukan sehari-hari seringkali menyulitkan Anda untuk mengelola semuanya. 
+        HomeEase hadir sebagai solusi untuk membantu Anda fokus pada hal yang benar-benar penting, 
+        sambil kami menangani urusan rumah Anda.</p>
+        <p><strong>Pesan sekarang</strong> dan nikmati kemudahan serta kenyamanan dengan layanan terbaik dari kami!</p>
+      </section>
+
+    <section>
+      <h2>Form Pemesanan</h2>
+      <form id="bookingForm">
+        <label for="name">Nama Pemesan</label>
+        <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+        <label for="phone">Nomor HP</label>
+        <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor HP Anda" required>
+        <label for="serviceType">Jenis Layanan:</label>
+        <select id="serviceType" required>
+          <option value="Cleaning">Cleaning Service</option>
+          <option value="Laundry">Laundry</option>
+          <option value="Cooking">Cooking Service</option>
+        </select>
+        <label for="location">Alamat:</label>
+        <input type="text" id="location" placeholder="Masukkan lokasi Anda" required>
+        <label for="date">Tanggal Layanan</label>
+        <input type="date" id="date" required>
+        <label for="notes">Catatan</label>
+        <textarea id="notes" name="notes" placeholder="Tambahkan catatan (opsional)"></textarea>
+        <button type="submit">Pesan Sekarang</button>
+      </form>
+    </section>
+    <section>
+      <h2>Daftar Pemesanan</h2>
+      <div id="bookingsList"></div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2024 HomeEase. All rights reserved.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
